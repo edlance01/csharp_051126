@@ -4,8 +4,9 @@ using System.Text;
 
 namespace com.ntier.Aviation
 {
-    public interface ISelfTest
+    internal class Product
     {
-        int SelfTest();
+
+        public decimal Price { get; set; }
     }
 }

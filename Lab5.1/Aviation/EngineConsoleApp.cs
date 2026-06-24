@@ -25,11 +25,11 @@ public class EngineConsoleApp
 
         // Initialize the dictionary and map strings to the instance methods
         _commands = new Dictionary<string, Func<string[], EngineFactory, bool>>
-    {
-        { "exit", ExitCommand },
-        { "list", ListCommand },
-        { "get",  GetCommand }
-    };
+        {
+            { "exit", ExitCommand },
+            { "list", ListCommand },
+            { "get",  GetCommand }
+        };
     }
 
 

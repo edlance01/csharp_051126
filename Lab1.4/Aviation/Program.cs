@@ -17,9 +17,9 @@ namespace com.ntier.Avaiation
            
             EnginePartFormatter enginePartFormatter = new EnginePartFormatter();
             Console.WriteLine(enginePartFormatter.GetPartInfo(enginePart));
-            ((EnginePart)enginePart).SelfTest();
-
-            Console.WriteLine();
+            // ((EnginePart)enginePart).SelfTest();  // Is there another way to do this without casting to a concrete type? 
+          
+            Console.WriteLine($"Self Test: {((ISelfTest)enginePart).SelfTest()}\n");
 
             // careful, enginePart usually should have an EnginePartFormatter
             // unless you truly want to treat it like a generic AirplanePart, then you can use the AirplanePartFormatter

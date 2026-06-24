@@ -4,7 +4,7 @@ using System.Text;
 
 namespace com.ntier.Aviation
 {
-    public interface ISelfTest
+    internal interface ISelfTest
     {
         int SelfTest();
     }

@@ -9,25 +9,17 @@ namespace com.ntier.Avaiation
         {
             try
             {
-                EnginePartFormatter partFormatter = new EnginePartFormatter();
-                EngineFactory engineFactory = new EngineFactory();
-                List<EnginePart>? engineParts = engineFactory
+               EnginePartFormatter partFormatter = new EnginePartFormatter();
+               EngineFactory engineFactory = new EngineFactory();
+               List<EnginePart>? engineParts = engineFactory
                     .LoadEngineParts(@"C:\Users\heidi\source\repos\Lab4.2\Aviation\parts.csv");
 
                 if (engineParts != null)
                 {
-                    List<string>? keys = engineFactory.EngineDictionary?.Keys.ToList();
-                    if (keys != null && engineFactory.EngineDictionary != null)
+                    foreach (EnginePart part in engineParts)
                     {
-                        keys.Sort();
-                        keys.Reverse();
-                        Console.WriteLine("Engine Parts from Dictionary in Reverse Order:");
-                        foreach (string key in keys)
-                        {
-                            Console.WriteLine(partFormatter.GetPartInfo(engineFactory.EngineDictionary[key]));
-                        }
-
-                       
+                        string partInfo = partFormatter.GetPartInfo(part);
+                        Console.WriteLine(partInfo);
                     }
                 }
             }

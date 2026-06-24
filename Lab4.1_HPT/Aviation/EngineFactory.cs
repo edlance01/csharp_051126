@@ -8,7 +8,7 @@ namespace com.ntier.Aviation
     {
         public void LoadEngineParts(string filePath)
         {
-            EnginePartFormatter enginePartFormatter = new EnginePartFormatter(); //for pure DI, add interface and do constructor injection
+            EnginePartFormatter enginePartFormatter = new EnginePartFormatter();
 
             using (StreamReader reader = new StreamReader(filePath))
             {

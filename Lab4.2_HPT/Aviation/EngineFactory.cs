@@ -10,38 +10,35 @@ namespace com.ntier.Aviation
     internal class EngineFactory
     {
         private List<EnginePart>? _engines;
-        private Dictionary<string, EnginePart>? _engineDictionary;
         private DateTime? _lastRead;
-
-        public Dictionary<string, EnginePart>? EngineDictionary { get { return _engineDictionary; } }
 
         public List<EnginePart>? LoadEngineParts(string filePath)
         {
             FileInfo fileInfo = new FileInfo(filePath);
 
+            // Check if we need to refresh the cache
             if (_lastRead == null || fileInfo.LastWriteTime > _lastRead)
             {
-                // Reset both to ensure the cache is fresh
-                var (parts, dict) = ReadEnginePartsFromFile(filePath);
-                _engines = parts;
-                _engineDictionary = dict;
+                // Capture the result of the private method into the member variable
+                _engines = ReadEnginePartsFromFile(filePath);
                 _lastRead = DateTime.Now;
             }
 
-            _engines?.Sort();
             return _engines;
         }
 
-        private (List<EnginePart>, Dictionary<string, EnginePart>) ReadEnginePartsFromFile(string filePath)
+        private List<EnginePart> ReadEnginePartsFromFile(string filePath)
         {
-            var tempList = new List<EnginePart>();
-            var tempDict = new Dictionary<string, EnginePart>();
+            // Create a LOCAL list first
+            List<EnginePart> tempEngineParts = new List<EnginePart>();
 
             using (StreamReader reader = new StreamReader(filePath))
             {
                 string? headers = reader.ReadLine();
                 if (headers != "PartNumber,Description,Price,EngineType")
+                {
                     throw new FormatException("The file headers do not match");
+                }
 
                 string? line;
                 while ((line = reader.ReadLine()) != null)
@@ -49,20 +46,20 @@ namespace com.ntier.Aviation
                     string[] fields = line.Split(',');
                     if (fields.Length == 4)
                     {
-                        var enginePart = new EnginePart
+                        EnginePart enginePart = new EnginePart
                         {
                             PartNumber = fields[0],
                             Description = fields[1],
                             Price = double.Parse(fields[2]),
                             EngineType = fields[3]
                         };
-                        tempList.Add(enginePart);
-                        // Use indexer to avoid exceptions on duplicate keys
-                        tempDict[enginePart.PartNumber] = enginePart;
+                        // ADD the part to the local list
+                        tempEngineParts.Add(enginePart);
                     }
                 }
             }
-            return (tempList, tempDict);
+            // Return the local list to the caller
+            return tempEngineParts;
         }
     }
  }
