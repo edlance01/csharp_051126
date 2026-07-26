@@ -10,8 +10,8 @@
         public string GetPartInfo()
         {
             return $@"Part Number: {PartNumber}
-        Description: {Description}
-        Price: {Price:C}";
+            Description: {Description}
+            Price: {Price:C}";
         }
     }
 }
