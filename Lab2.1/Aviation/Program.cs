@@ -48,6 +48,8 @@ namespace com.ntier.Avaiation
             {
 
                 Console.WriteLine($"Error: {ae.Message}");
+                // see stack trace
+                Console.WriteLine($"\nStackTrace: {ae.StackTrace}");
             }
         }
     }
