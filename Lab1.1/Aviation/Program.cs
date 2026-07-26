@@ -21,14 +21,18 @@ namespace Aviation
                 EngineType = "GE-90"
             };
 
+            Console.WriteLine("\n-----Engine Part-----");
+            //NOTE the cast
+            Console.WriteLine(((EnginePart)program._part).GetPartInfo());
+
+            Console.WriteLine("\n-----Engine Part without the cast ('new' prevents polymorphism)-----");
+            Console.WriteLine(program._part.GetPartInfo());
+
             Console.WriteLine("\n-----Airplane Part----");
             AirplanePart airplanePart = program._part;
             Console.WriteLine(airplanePart.GetPartInfo());
 
-            Console.WriteLine("\n-----Engine Part-----");
-            //NOTE the cast
-            Console.WriteLine(((EnginePart)program._part).GetPartInfo());
-      
+
         }
     }
 }

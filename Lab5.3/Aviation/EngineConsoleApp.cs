@@ -24,8 +24,9 @@ public class EngineConsoleApp
         _factory.LoadEngineParts();
 
         _factory.EngineInventoryManager.InventoryExhausted += (sender, e) =>
-        {
+        { 
             Console.WriteLine($"Alert: Inventory for part number '{e.PartNumber}' is low!");
+            Console.WriteLine($"sender is: {sender?.GetType().Name}");
         };
 
             // Initialize the dictionary and map strings to the instance methods
