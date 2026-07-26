@@ -10,7 +10,7 @@ namespace NTier.Aviation
         //property for bad data for the challenge
         public string? InvalidPartNumber { get;}
 
-        public PartNumberInvalidFormatException() : base("Invalide part number format.") { }
+        public PartNumberInvalidFormatException() : base("Invalid part number format.") { }
         public PartNumberInvalidFormatException(string partNumber) : 
             base($"Invalid part number format: {partNumber}") 
         {
