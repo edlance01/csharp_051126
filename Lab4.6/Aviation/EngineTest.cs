@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
-namespace com.ntier.Aviation
+namespace NTier.Aviation
 {
     internal class EngineTest
     {

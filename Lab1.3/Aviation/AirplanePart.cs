@@ -1,4 +1,4 @@
-﻿namespace com.ntier.Aviation
+﻿namespace NTier.Aviation
 {
     internal abstract class AirplanePart
     {
@@ -9,9 +9,7 @@
 
         public virtual string GetPartInfo()
         {
-            return $@"Part Number: {PartNumber}
-        Description: {Description}
-        Price: {Price:C}";
+            return $"Part Number: {PartNumber}\nDescription: {Description}\nPrice: {Price:C}";
         }
     }
 }

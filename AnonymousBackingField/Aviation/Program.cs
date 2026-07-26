@@ -1,7 +1,7 @@
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-namespace com.ntier.Aviation
+namespace NTier.Aviation
 {
     public class Program
     {

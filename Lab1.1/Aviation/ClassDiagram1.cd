@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
-  <Class Name="com.ntier.Aviation.AirplanePart">
+  <Class Name="NTier.Aviation.AirplanePart">
     <Position X="5.5" Y="0.5" Width="3.5" />
     <TypeIdentifier>
       <HashCode>CAAAAAAAAQAgAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AirplanePart.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="com.ntier.Aviation.EnginePart">
+  <Class Name="NTier.Aviation.EnginePart">
     <Position X="5.5" Y="3" Width="3.5" />
     <TypeIdentifier>
       <HashCode>CAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>

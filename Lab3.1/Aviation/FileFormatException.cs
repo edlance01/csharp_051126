@@ -1,4 +1,4 @@
-﻿namespace com.ntier.Aviation
+﻿namespace NTier.Aviation
 {
     internal class FileFormatException : Exception
     {

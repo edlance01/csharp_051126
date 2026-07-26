@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace com.ntier.Aviation
+namespace NTier.Aviation
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)   ]
     internal class AviationComponentAttribute  : Attribute

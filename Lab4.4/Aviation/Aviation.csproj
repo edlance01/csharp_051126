@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>com.ntier.Aviation</RootNamespace>
+    <RootNamespace>NTier.Aviation</RootNamespace>
   </PropertyGroup>
 
 </Project>

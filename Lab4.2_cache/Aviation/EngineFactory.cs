@@ -1,4 +1,4 @@
-﻿using com.ntier.Aviation;
+﻿using NTier.Aviation;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Security.AccessControl;
 using System.Text;
 using System.Text.Json;
 
-namespace com.ntier.Aviation
+namespace NTier.Aviation
 {
     internal class EngineFactory
     {

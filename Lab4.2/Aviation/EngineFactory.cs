@@ -1,11 +1,11 @@
-﻿using com.ntier.Aviation;
+﻿using NTier.Aviation;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.AccessControl;
 using System.Text;
 
-namespace com.ntier.Aviation
+namespace NTier.Aviation
 {
     internal class EngineFactory
     {

@@ -1,4 +1,4 @@
-﻿namespace com.ntier.Aviation
+﻿namespace NTier.Aviation
 {
     public class EnginePart : AirplanePart, ISelfTest
     {

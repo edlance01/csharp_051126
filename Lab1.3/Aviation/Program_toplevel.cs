@@ -1,6 +1,6 @@
 ﻿
 
-using com.ntier.Aviation;
+using NTier.Aviation;
 
 EnginePart enginePart = new EnginePart
 {

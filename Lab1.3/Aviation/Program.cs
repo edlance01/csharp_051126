@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 using System;
-using com.ntier.Aviation; 
+using NTier.Aviation; 
 
 namespace AviationApp  //note changed namespace just to show clients are not always in the same namespace
 

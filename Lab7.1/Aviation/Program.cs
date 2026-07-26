@@ -1,6 +1,6 @@
-﻿using com.ntier.Aviation;
+﻿using NTier.Aviation;
 
-namespace com.ntier.Aviation
+namespace NTier.Aviation
 {
     class Program
     {

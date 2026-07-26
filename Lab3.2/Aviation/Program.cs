@@ -1,4 +1,4 @@
-﻿using com.ntier.Aviation;
+﻿using NTier.Aviation;
 
 namespace com.ntier.Avaiation
 {

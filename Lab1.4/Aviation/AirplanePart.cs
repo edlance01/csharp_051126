@@ -1,4 +1,4 @@
-﻿namespace com.ntier.Aviation
+﻿namespace NTier.Aviation
 {
     internal abstract class AirplanePart
     {

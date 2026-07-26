@@ -1,6 +1,6 @@
 ﻿
 
-using com.ntier.Aviation;
+using NTier.Aviation;
 
 EnginePart enginePart = new EnginePart
 {
@@ -21,6 +21,7 @@ AirplanePart airplanePartTwo = new EnginePart
 Console.WriteLine("\n-----Engine Part-----");
 Console.WriteLine(enginePart.GetPartInfo());
 
+// We could cast to AirplanePart when creating above, just showing it explicitily for learning
 Console.WriteLine("\n-----Airplane Part----");
 AirplanePart airplanePart = enginePart;
 Console.WriteLine(airplanePart.GetPartInfo());  //polymorphism in action

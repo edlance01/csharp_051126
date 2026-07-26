@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace com.ntier.Aviation
+namespace NTier.Aviation
 {
     internal class TreeWalker
     {

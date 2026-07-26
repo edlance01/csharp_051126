@@ -1,4 +1,4 @@
-﻿namespace com.ntier.Aviation
+﻿namespace NTier.Aviation
 {
     //NOTE for an even better way explore Generics
     internal class EnginePartFormatter : AirplanePartFormatter
