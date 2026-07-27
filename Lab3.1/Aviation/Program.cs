@@ -20,7 +20,7 @@ namespace com.ntier.Avaiation
             {
                 Console.WriteLine($"File error: {ioe.Message}");
             }
-            catch (FormatException fe)
+            catch (FileFormatException fe)
             {
                 Console.WriteLine($"Format error: {fe.Message}");
             }
@@ -34,10 +34,10 @@ namespace com.ntier.Avaiation
                 Console.WriteLine($"Error: {pnife.Message}");
                 Console.WriteLine($"The value '{pnife.InvalidPartNumber}' is not allowed");
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
-            }
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+            //}
             finally
             {
                 //Not required in this example, but good practice to include for cleanup if needed

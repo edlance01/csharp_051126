@@ -15,14 +15,14 @@ namespace NTier.Aviation
                 string? headers = reader.ReadLine(); // Read the header line
 
                 if (headers != "PartNumber,Description,Price,EngineType") {
-                    throw new FormatException("The file headers do not match");
+                    throw new FileFormatException("The file headers do not match");
                 }
                 string? line = "";
                 while ((line = reader.ReadLine()) != null)
                 {
                     string[] fields = line.Split(',');
                     if(fields.Length != 4) {
-                        throw new FormatException("Each line must have exactly 4 fields");
+                        throw new FileFormatException("Each line must have exactly 4 fields");
                     }
 
                     EnginePart enginePart = new EnginePart
