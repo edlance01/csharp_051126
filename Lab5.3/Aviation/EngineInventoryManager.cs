@@ -7,6 +7,9 @@ namespace NTier.Aviation
     internal class EngineInventoryManager
     {
         private EngineFactory _engineFactory;
+
+        // This makes EngineInventoryManager a publisher of the InventoryExhausted event,
+        // which can be subscribed to by other classes (subscribers)
         public event EventHandler<InventoryEventArgs>? InventoryExhausted;
 
 

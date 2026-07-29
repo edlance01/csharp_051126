@@ -5,6 +5,7 @@
     public class Boiler
     {
         //The event - uses the delegate to create a notification hook
+        //register methods to this event to be notified when the event is raised
         public event TemperatureHandler? OnCriticalTemp;
 
         public void HeatUp(int currentTemp)

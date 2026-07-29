@@ -23,9 +23,9 @@ public class EngineConsoleApp
         _factory = new EngineFactory(filePath);
         _factory.LoadEngineParts();
 
-        _factory.EngineInventoryManager.InventoryExhausted += (sender, e) =>
+        _factory.EngineInventoryManager.InventoryExhausted += (sender, evtArgs) =>
         { 
-            Console.WriteLine($"Alert: Inventory for part number '{e.PartNumber}' is low!");
+            Console.WriteLine($"Alert: Inventory for part number '{evtArgs.PartNumber}' is low!");
             Console.WriteLine($"sender is: {sender?.GetType().Name}");
         };
 

@@ -2,7 +2,7 @@
 
 namespace com.ntier.Avaiation
 {
-    class Programlis
+    class Program
     {
         static void Main(string[] args)
         {
