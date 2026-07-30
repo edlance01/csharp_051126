@@ -7,7 +7,8 @@ namespace LinqExampleTwo
     public record TodoItem(string Title, bool IsCompleted, int Priority, string Category);
 
     /*
-     * Let’s update our demo to answer a more complex question: "What is the average priority of tasks, and how many are there per category?"
+     * Let’s update our demo to answer a more complex question: "What is the average priority of tasks, 
+     * and how many are there per category?"
      * 
      * This example demonstrates more advanced LINQ operations, including grouping and aggregation.
      * We have a list of TodoItem objects, and we want to analyze them by category.

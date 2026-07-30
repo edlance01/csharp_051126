@@ -232,6 +232,7 @@ public class EngineConsoleApp
                 // Filter the parts
                 var filteredParts = engineParts?
                     .Where(part => part.Price >= minPrice && part.Price <= maxPrice)
+                    .OrderBy(part => part.Price) // Note required for lab, just example
                     .ToList();
 
                 if (filteredParts != null && filteredParts.Count > 0)
