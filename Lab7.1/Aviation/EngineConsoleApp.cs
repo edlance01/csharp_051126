@@ -29,7 +29,7 @@ public class EngineConsoleApp
         };
     }
 
-    public async Task InitializeDataAsync()
+    public async Task LoadEngineParts() // Instantitated EngineFactory when app is created.
     {
         //await the factory call
         _engineParts = await _factory.LoadEnginePartsAsync();

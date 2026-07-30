@@ -27,7 +27,7 @@ namespace NTier.Aviation
                 */
 
                 //per lab instructions (not demo code above)
-                app.InitializeDataAsync(); //ignore this for now
+                app.LoadEngineParts(); //ignore this for now
                 Console.WriteLine("Application starting... Data is loading in the background.");
                 app.Run();
             }
