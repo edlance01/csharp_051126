@@ -16,6 +16,7 @@ namespace ReflectionExampleOne
             // Create an instance of the SecretAgent class
             object agent = Activator.CreateInstance(type);
 
+            Console.WriteLine($"Base Type of {type.Name}: {type.BaseType.Name}");
 
             Console.WriteLine($"Methods found in {type.Name}:");
             Console.WriteLine("-------------------------------------");
