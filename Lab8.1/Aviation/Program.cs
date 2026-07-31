@@ -51,7 +51,7 @@ namespace com.ntier.Avaiation
             }
 
             Console.WriteLine($"\nAttributes on the class {airplanePart.GetType().Name}");
-            var attributes = airplanePart.GetType().GetCustomAttributes(false);
+            var attributes = airplanePart.GetType().GetCustomAttributes(inherit: false);
 
             foreach (var attr in attributes)
             {
